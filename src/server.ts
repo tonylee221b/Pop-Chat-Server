@@ -9,6 +9,8 @@ import socket from "./socket"
 const app = express()
 app.use(cors())
 
+const PORT = process.env.PORT || 3001
+
 const { uri } = Config
 
 const httpServer = createServer(app)
@@ -20,6 +22,6 @@ const io = new Server(httpServer, {
   },
 })
 
-httpServer.listen(3001, () => {
-  console.log("Server is listening to " + 3001), socket({ io })
+httpServer.listen(PORT, () => {
+  console.log("Server is listening to " + PORT), socket({ io })
 })
