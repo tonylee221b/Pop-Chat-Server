@@ -2,20 +2,18 @@
   "name": "server",
   "version": "1.0.0",
   "description": "Pop-Chat Server",
-  "main": "server.ts",
   "author": "BlackCoder",
   "scripts": {
     "dev": "nodemon ./src/server.ts",
     "tsc": "./node_modules/typescript/bin/tsc",
-    "build": "rimraf ./build && tsc",
-    "postinstall": "pnpm run tsc",
+    "build": "tsc",
+    "postinstall": "pnpm run build",
     "start": "pnpm run build && node build/server.js"
   },
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.1",
-    "rimraf": "^3.0.2",
     "socket.io": "^4.5.2"
   },
   "devDependencies": {
