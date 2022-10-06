@@ -6,6 +6,7 @@
   "main": "./src/server.ts",
   "scripts": {
     "dev": "nodemon ./src/server.ts",
+    "tsc": "tsc",
     "postinstall": "tsc",
     "start": "node build/server.js"
   },
