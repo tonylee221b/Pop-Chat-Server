@@ -1,3 +1,3 @@
 export const Config = {
-  uri: "http://localhost:3000",
+  uri: "https://pop-chat-socket.vercel.app",
 }
