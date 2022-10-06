@@ -6,7 +6,9 @@
   "author": "BlackCoder",
   "scripts": {
     "dev": "nodemon ./src/server.ts",
+    "tsc": "./node_modules/typescript/bin/tsc",
     "build": "rimraf ./build && tsc",
+    "postinstall": "pnpm run tsc",
     "start": "pnpm run build && node build/server.js"
   },
   "license": "MIT",
