@@ -22,6 +22,10 @@ const io = new Server(httpServer, {
   },
 })
 
+app.get("/", (req, res) => {
+  res.send("POP CHAT SERVER: Up and Running")
+})
+
 httpServer.listen(PORT, () => {
   console.log("Server is listening to " + PORT), socket({ io })
 })
