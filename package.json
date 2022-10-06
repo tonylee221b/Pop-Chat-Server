@@ -5,7 +5,7 @@
   "author": "BlackCoder",
   "scripts": {
     "dev": "nodemon ./src/server.ts",
-    "tsc": "./node_modules/typescript/bin/tsc",
+    "tsc": "./node_modules/.pnpm/typescript@4.8.3/node_modules/typescript/bin/tsc",
     "build": "tsc",
     "postinstall": "pnpm run build",
     "start": "pnpm run build && node build/server.js"
