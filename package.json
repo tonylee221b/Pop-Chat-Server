@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon ./src/server.ts",
     "tsc": "tsc",
-    "postinstall": "tsc",
+    "postinstall": "pnpm run tsc",
     "start": "node build/server.js"
   },
   "engines": {
