@@ -6,8 +6,7 @@
   "main": "./src/server.ts",
   "scripts": {
     "dev": "nodemon ./src/server.ts",
-    "tsc": "tsc",
-    "postinstall": "pnpm run tsc",
+    "build": "tsc",
     "start": "node build/server.js"
   },
   "engines": {
