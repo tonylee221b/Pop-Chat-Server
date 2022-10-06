@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "Pop-Chat Server",
   "author": "BlackCoder",
+  "main": "server.ts",
   "scripts": {
     "dev": "nodemon ./src/server.ts",
-    "tsc": "./node_modules/.pnpm/typescript@4.8.3/node_modules/typescript/bin/tsc",
-    "build": "tsc",
-    "postinstall": "pnpm run build",
-    "start": "pnpm run build && node build/server.js"
+    "build": "rm -r ./build && tsc",
+    "start": "node build/server.js"
   },
   "engines": {
     "node": "16.15.1"
