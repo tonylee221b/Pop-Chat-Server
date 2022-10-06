@@ -10,6 +10,9 @@
     "postinstall": "pnpm run build",
     "start": "pnpm run build && node build/server.js"
   },
+  "engines": {
+    "node": "16.15.1"
+  },
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
