@@ -6,7 +6,7 @@
   "author": "BlackCoder",
   "scripts": {
     "dev": "nodemon ./src/server.ts",
-    "build": "rimraf ./build && tsc",
+    "build": "pnpm install && rimraf ./build && tsc",
     "start": "pnpm run build && node build/server.js"
   },
   "license": "MIT",
