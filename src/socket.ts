@@ -47,7 +47,9 @@ const rooms = new Set<Room>([])
 
 const socket = ({ io }: { io: Server }) => {
   io.on("connection", (socket: Socket) => {
-    socket.emit("show_rooms", rooms)
+    socket.on("display_rooms", () => {
+      socket.emit("show_rooms", Array.from(rooms))
+    })
 
     // Creating a new room
     socket.on(
