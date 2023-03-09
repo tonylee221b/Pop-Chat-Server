@@ -30,4 +30,4 @@ httpServer.listen(PORT, () => {
   console.log("Server is listening to " + PORT), socket({ io })
 })
 
-module.exports = app
+module.exports = httpServer
