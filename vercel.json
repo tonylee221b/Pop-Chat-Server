@@ -2,7 +2,7 @@
   "builds": [
     {
       "src": "./src/server.ts",
-      "use": "@vercal/node"
+      "use": "@now/node"
     }
   ],
   "routes": [
