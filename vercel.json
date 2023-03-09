@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "./src/server.ts",
+      "use": "@vercal/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ]
+}
