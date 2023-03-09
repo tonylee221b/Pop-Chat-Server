@@ -11,7 +11,7 @@ app.use(cors())
 
 const PORT = process.env.PORT || 3001
 
-const { devUri, uri } = Config
+const { uri } = Config
 
 const httpServer = createServer(app)
 
