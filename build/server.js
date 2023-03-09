@@ -26,4 +26,4 @@ app.get("/", function (req, res) {
 httpServer.listen(PORT, function () {
     console.log("Server is listening to " + PORT), (0, socket_1.default)({ io: io });
 });
-module.exports = httpServer;
+module.exports = app;
